@@ -1,1 +1,1 @@
-# ComNet
+# EEGNet Fusion V2
