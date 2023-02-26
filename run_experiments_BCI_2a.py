@@ -108,7 +108,7 @@ def getModel(model_name, use_cpu):
         model = EEGModels.EEGNet_fusion(nb_classes=4, Chans = 22, Samples = 1125, cpu=use_cpu)
     elif(model_name == 'EEGNet'):
         # Train using EEGNet: https://arxiv.org/abs/1611.08024
-        model = EEGModels.EEGNet_classifier(nb_classes=4, Chans = 22, Samples = 1125, cpu=use_cpu) 
+        model = EEGModels.EEGNet(nb_classes=4, Chans = 22, Samples = 1125, cpu=use_cpu) 
     elif(model_name == 'DeepConvNet'):
         # Train using DeepConvNet: https://doi.org/10.1002/hbm.23730
         model = EEGModels.DeepConvNet(nb_classes=4, Chans = 22, Samples = 1125, cpu=use_cpu)
