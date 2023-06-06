@@ -61,7 +61,7 @@ def train_test_model(model, model_name, X_train, y_train, X_val, y_val, X_test, 
         model.load_weights(new_model_name)
         testing_start = time.time()
         acc, equals, preds = predict_accuracy(model, X_test, y_test, new_model_name, multi_branch=multi_branch)
-        testing_total_time = time.time() - training_start
+        testing_total_time = time.time() - testing_start
         print("Model {} total testing time was {} seconds".format(model_name, testing_total_time))
         print("That is {} seconds per sample".format(testing_total_time/X_test.shape[0]))
         
